@@ -11,15 +11,15 @@ projects:
   - icon: project
     name: 汉服文化推广平台
     desc: 项目详细描述
-    link: https://你的项目链接
+    link: https://github.com/Haleymax/Hanfu
 
   - icon: link
     name: 个人博客
-    desc: 链接详细描述
-    link: https://链接地址
+    desc: 就是本网页
+    link: http://49.235.135.171/
 
   - icon: book
-    name: 在线笔记网站
+    name: 个人知识库
     desc: 自己搭建的个人云笔记平台
     link: http://49.235.135.171:8090/#/login
 
@@ -30,12 +30,12 @@ projects:
 
   - icon: friend
     name: 我的小伙伴
-    desc: 伙伴详细介绍
+    desc: 还莫得
     link: https://你的伙伴链接
 
-  - icon: https://theme-hope-assets.vuejs.press/logo.svg
-    name: 自定义项目
-    desc: 自定义详细介绍
+  - icon: project
+    name: 待上线
+    desc: 还在想该加入哪一个
     link: https://你的自定义链接
 
 footer: 还没有备案，筹备中
