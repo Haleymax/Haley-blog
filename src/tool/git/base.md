@@ -1,12 +1,12 @@
 ---
 icon: pen-to-square
-date: 2022-01-01
+date: 2024-06-01
 category:
-  - 苹果
+  - c语言
 tag:
-  - 红
-  - 大
-  - 圆
+  - c
+  - 网络编程
+  - 工具
 ---
 
 # git
