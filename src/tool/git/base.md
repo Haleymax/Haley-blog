@@ -2,11 +2,20 @@
 icon: pen-to-square
 date: 2024-06-01
 category:
-  - c语言
-tag:
-  - c
-  - 网络编程
   - 工具
+tag:
+  - git
+  - 仓库
+  - 编程
+
+sticky: true
+# 此页面会出现在星标文章中
+
+order: 1
+# 设置作者
+author: Ms.Huang
+
+copyright: copyright by Haley
 ---
 
 # git

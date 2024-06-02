@@ -6,6 +6,21 @@ category:
   - 使用指南
 tag:
   - Markdown
+
+navbar: false
+sidebar: false
+
+breadcrumb: false
+pageInfo: false
+contributors: false
+editLink: false
+lastUpdated: false
+prev: false
+next: false
+comment: false
+footer: false
+
+backtotop: false
 ---
 
 VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。
