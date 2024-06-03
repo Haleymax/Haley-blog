@@ -13,8 +13,8 @@ projects:
     desc: 项目详细描述
     link: https://github.com/Haleymax/Hanfu
 
-  - icon: link
-    name: 个人博客
+  - icon: project
+    name: C++微型web服务器
     desc: 就是本网页
     link: http://49.235.135.171/
 
