@@ -18,7 +18,7 @@ projects:
     desc: 使用C++搭建的一个简单web服务器
     link: http://49.235.135.171/
 
-  - icon: peoject
+  - icon: project
     name: 数据结构
     desc: 分别使用不同的编程语言实现数据结构代码的编写
     link: https://github.com/Haleymax/Data-Structure
