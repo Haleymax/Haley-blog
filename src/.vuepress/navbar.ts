@@ -9,39 +9,39 @@ export default navbar([
     prefix: "/posts/",
     children: [
       {
-        text: "苹果",
+        text: "网络编程",
         icon: "pen-to-square",
         prefix: "apple/",
         children: [
-          { text: "苹果1", icon: "pen-to-square", link: "1" },
-          { text: "苹果2", icon: "pen-to-square", link: "2" },
-          "3",
-          "4",
+          { text: "大小端转换", icon: "pen-to-square", link: "1" },
+          { text: "套接字", icon: "pen-to-square", link: "2" },
+          //"3",
+          //"4",
         ],
       },
       {
-        text: "香蕉",
+        text: "算法",
         icon: "pen-to-square",
         prefix: "banana/",
         children: [
           {
-            text: "香蕉 1",
+            text: "动态规划",
             icon: "pen-to-square",
             link: "1",
           },
           {
-            text: "香蕉 2",
+            text: "leetcode",
             icon: "pen-to-square",
             link: "2",
           },
-          "3",
-          "4",
+          //"3",
+          //"4",
         ],
       },
-      { text: "樱桃", icon: "pen-to-square", link: "cherry" },
+      /*{ text: "樱桃", icon: "pen-to-square", link: "cherry" },
       { text: "火龙果", icon: "pen-to-square", link: "dragonfruit" },
       "tomato",
-      "strawberry",
+      "strawberry",*/
     ],
   },
   {
