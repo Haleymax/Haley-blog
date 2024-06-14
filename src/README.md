@@ -28,9 +28,9 @@ projects:
     desc: 自己搭建的个人云笔记平台
     link: http://49.235.135.171:8090/#/login
 
-  - icon: article
-    name: 我的第一篇文章
-    desc: 文章详细描述
+  - icon: project
+    name: 球球大冒险
+    desc: 使用skynet开发的小游戏
     link: https://你的文章链接
 
   - icon: project
