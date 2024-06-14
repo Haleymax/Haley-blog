@@ -6,15 +6,16 @@ export default navbar([
   {
     text: "知识库",
     icon: "pen-to-square",
-    prefix: "/posts/",
+    prefix: "/knowledge/",
     children: [
       {
         text: "网络编程",
         icon: "pen-to-square",
-        prefix: "apple/",
+        prefix: "linux网络编程/",
         children: [
-          { text: "大小端转换", icon: "pen-to-square", link: "1" },
-          { text: "套接字", icon: "pen-to-square", link: "2" },
+          { text: "TCP编程", icon: "pen-to-square", link: "TCP编程" },
+          { text: "UDP编程", icon: "pen-to-square", link: "UDP编程" },
+          { text: "套接字", icon: "pen-to-square", link: "套接字" },
           //"3",
           //"4",
         ],
