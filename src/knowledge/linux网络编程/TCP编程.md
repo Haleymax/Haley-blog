@@ -13,15 +13,15 @@ tag:
 
 ## 1.TCP中的cs架构
 
-![image.png](../../.vuepress/public/markdown/tcp.png)
+![TCP交互过程](../../.vuepress/public/markdown/tcp.png)
 
 ## 2.TCP中的函数
 
 ### 2.1socket函数
 
-**头文件：** `#include <sys/types.h>` `include <sys/socket.h>`
-**函数：**`int socket(in domain,int type,int protocol);`
-**功能：** 创建一个套接字
+**头文件：** `#include <sys/types.h>` `include <sys/socket.h>` <br>
+**函数：**`int socket(in domain,int type,int protocol);`<br>
+**功能：** 创建一个套接字<br>
 **参数：**
 
 * domain:
@@ -236,7 +236,7 @@ int main(void){
 
 运行效果：
 
-![image.png](../../.vuepress/public/markdown/tcpserver.png)
+![服务端运行结果](../../.vuepress/public/markdown/tcpserver.png)
 
 ### 2.9TCP客户端
 
@@ -309,4 +309,4 @@ int main(void){
 ```
 
 运行效果图：
-![image.png](../../.vuepress/public/markdown/tcpclient.png)
+![客户端运行效果](../../.vuepress/public/markdown/tcpclient.png)
