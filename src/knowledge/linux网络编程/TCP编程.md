@@ -41,9 +41,9 @@ tag:
 
 ### 2.2bind函数
 
-**头文件：** `#include <sys/types.h>` `include <sys/socket.h>`
-**函数：**`int bind(int sockfd,const struct sockaddr *addr,socklen_t addrlen);`
-**功能：** 将套接字与地址绑定
+**头文件：** `#include <sys/types.h>` `include <sys/socket.h>`<br>
+**函数：**`int bind(int sockfd,const struct sockaddr *addr,socklen_t addrlen);`<br>
+**功能：** 将套接字与地址绑定<br>
 **参数：**
 
 * sockfd : socket文件描述符
@@ -62,8 +62,8 @@ tag:
 * sockfd：文件描述符（套接字）
 * backlog :这个参数定义了内核应该为相应套接字排队的最大连接数。注意，这个值并不保证你能够同时接受这么多连接，它只是一个提示给内核的。在大多数系统中，实际的最大连接数可能会比这个值小。
 
-1. 未完成连接的队列 ：这是等待完成三次握手的连接请求队列。当一个客户端尝试连接服务器时，服务器会先发送一个 SYN-ACK 响应，并等待客户端的 ACK 响应来完成三次握手。在这个 ACK 响应到达之前，这个连接请求会在这个队列中等待。
-2. 已完成连接的队列 ：这是已经完成了三次握手，但还没有被`accept` 函数接受的连接队列。一旦有连接完成了三次握手，它就会从未完成连接的队列移动到已完成连接的队列，等待服务器通过`accept` 函数来接受它。
+1. 未完成连接的队列 ：这是等待完成三次握手的连接请求队列。当一个客户端尝试连接服务器时，服务器会先发送一个 SYN-ACK 响应，并等待客户端的 ACK 响应来完成三次握手。在这个 ACK 响应到达之前，这个连接请求会在这个队列中等待。<br>
+2. 已完成连接的队列 ：这是已经完成了三次握手，但还没有被`accept` 函数接受的连接队列。一旦有连接完成了三次握手，它就会从未完成连接的队列移动到已完成连接的队列，等待服务器通过`accept` 函数来接受它。<br>
 
 **返回值：** 如果 `listen` 函数成功，它返回 0。如果失败，它返回 -1，并设置全局变量 `errno` 来指示错误
 
@@ -82,9 +82,9 @@ tag:
 
 ### 2.5connect函数
 
-**头文件：** `#include <sys/types.h>` `include <sys/socket.h>`
-**函数：**`int connect(int sockfd , const struct sockaddr *addr , socklen_t addrlen)`
-**功能：** connect函数用于客户端，它尝试由addr参数指定的服务器建立连接。这个函数会阻塞直到连接建立或出错
+**头文件：** `#include <sys/types.h>` `include <sys/socket.h>`<br>
+**函数：**`int connect(int sockfd , const struct sockaddr *addr , socklen_t addrlen)`<br>
+**功能：** connect函数用于客户端，它尝试由addr参数指定的服务器建立连接。这个函数会阻塞直到连接建立或出错<br>
 **参数：**
 
 * sockfd：文件描述符（套接字）
@@ -95,9 +95,9 @@ tag:
 
 ### 2.6recv函数
 
-**头文件：** `#include <sys/types.h>` `include <sys/socket.h>`
-**函数：**`ssize_t recv(int sockfd , void *buf , size_t len , int flags)`
-**功能：** recv函数用于从已连接的套接字接收数据
+**头文件：** `#include <sys/types.h>` `include <sys/socket.h>`<br>
+**函数：**`ssize_t recv(int sockfd , void *buf , size_t len , int flags)`<br>
+**功能：** recv函数用于从已连接的套接字接收数据<br>
 **参数：**
 
 * sockfd：文件描述符（套接字）
@@ -117,9 +117,9 @@ tag:
 
 ### 2.7send函数
 
-**头文件：** `#include <sys/types.h>` `include <sys/socket.h>`
-**函数：**`ssize_t send(int sockfd , const void *buf , size_t len , int flag)`
-**功能：** send函数用于在已连接的套接字上发送数据
+**头文件：** `#include <sys/types.h>` `include <sys/socket.h>`<br>
+**函数：**`ssize_t send(int sockfd , const void *buf , size_t len , int flag)`<br>
+**功能：** send函数用于在已连接的套接字上发送数据<br>
 **参数：**
 
 * sockfd：文件描述符（套接字）
@@ -234,7 +234,7 @@ int main(void){
 }
 ```
 
-运行效果：
+运行效果：<br>
 
 ![服务端运行结果](../../.vuepress/public/markdown/tcpserver.png)
 
@@ -308,5 +308,5 @@ int main(void){
 }
 ```
 
-运行效果图：
+运行效果图：<br>
 ![客户端运行效果](../../.vuepress/public/markdown/tcpclient.png)

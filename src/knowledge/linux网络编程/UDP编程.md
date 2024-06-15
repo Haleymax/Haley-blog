@@ -14,14 +14,14 @@ tag:
 
 ## 1.udp结构图
 
-![image.png](../../.vuepress/public/markdown/udp.png)
+![udp结构图](../../.vuepress/public/markdown/udp.png)
 
 ## 2.sendto函数
 
-**头文件：**`#include <sys/types.h>`  `#include <sys/socket.h>`
+**头文件：**`#include <sys/types.h>`  `#include <sys/socket.h>`<br>
 
-**功能：** 向to结构体中指定的ip发送udp数据，可以发送0长度的udp数据包
-**函数：**
+**功能：** 向to结构体中指定的ip发送udp数据，可以发送0长度的udp数据包<br>
+**函数：**<br>
 
 ```cpp
 ssize_t sendto (int sockfd , const void *buf , size_t len , int flags , const struct sockaddr *to , socklen_t addrlen);
@@ -38,8 +38,8 @@ ssize_t sendto (int sockfd , const void *buf , size_t len , int flags , const st
 
 ## 3.bind函数
 
-**头文件：**`#include <sys/types.h>`  `#include <sys/socket.h>`
-**功能：**：将本地协议地址与sockfd绑定，这样ip、port就固定了
+**头文件：**`#include <sys/types.h>`  `#include <sys/socket.h>`<br>
+**功能：**：将本地协议地址与sockfd绑定，这样ip、port就固定了<br>
 **函数:**
 
 ```cpp
@@ -100,7 +100,7 @@ Binding server to port 36895
 #include <sys/socket.h>    ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags,                   struct sockaddr *src_addr, socklen_t *addrlen);
 ```
 
-参数说明：
+参数说明：<br>
 
 1. `sockfd`：这是一个指向已连接或未连接的 socket 的文件描述符。
 2. `buf`：这是一个指向缓冲区的指针，用于存储接收到的数据。
@@ -114,7 +114,45 @@ Binding server to port 36895
 以下是一个简单的 UDP 接收数据的示例：
 
 ```c
-#include <stdio.h>  #include <stdlib.h>  #include <string.h>  #include <sys/socket.h>  #include <netinet/in.h>  #include <arpa/inet.h>    #define BUF_SIZE 1024    int main() {      int sockfd;      struct sockaddr_in server_addr, client_addr;      char buffer[BUF_SIZE];      socklen_t addrlen = sizeof(client_addr);        // 创建一个 UDP socket      if ((sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {          perror("socket creation failed");          exit(EXIT_FAILURE);      }        // 设置服务器地址信息      memset(&server_addr, 0, sizeof(server_addr));      server_addr.sin_family = AF_INET;      server_addr.sin_addr.s_addr = INADDR_ANY;      server_addr.sin_port = htons(12345);        // 绑定 socket 到服务器地址      if (bind(sockfd, (const struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {          perror("bind failed");          exit(EXIT_FAILURE);      }        // 接收数据      ssize_t n = recvfrom(sockfd, buffer, BUF_SIZE, 0, (struct sockaddr*)&client_addr, &addrlen);      if (n < 0) {          perror("recvfrom failed");          exit(EXIT_FAILURE);      }        // 打印接收到的数据和发送方的地址信息      printf("Received %zd bytes from %s:%d\n", n, inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));      printf("Data: %s\n", buffer);        close(sockfd);      return 0;  }
+#include <stdio.h>  
+#include <stdlib.h>  
+#include <string.h>  
+#include <sys/socket.h>  
+#include <netinet/in.h>  
+#include <arpa/inet.h>    
+#define BUF_SIZE 1024    
+int main() {      
+    int sockfd;      
+    struct sockaddr_in server_addr, client_addr;      
+    char buffer[BUF_SIZE];      
+    socklen_t addrlen = sizeof(client_addr);        
+    // 创建一个 UDP socket      
+    if ((sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {          
+        perror("socket creation failed");          
+        exit(EXIT_FAILURE);      
+        }        
+    // 设置服务器地址信息      
+    memset(&server_addr, 0, sizeof(server_addr));      
+    server_addr.sin_family = AF_INET;      
+    server_addr.sin_addr.s_addr = INADDR_ANY;      
+    server_addr.sin_port = htons(12345);        
+    // 绑定 socket 到服务器地址      
+    if (bind(sockfd, (const struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {          
+        perror("bind failed");          
+        exit(EXIT_FAILURE);      
+        }        
+    // 接收数据     
+    ssize_t n = recvfrom(sockfd, buffer, BUF_SIZE, 0, (struct sockaddr*)&client_addr, &addrlen);      
+    if (n < 0) {          
+        perror("recvfrom failed");          
+        exit(EXIT_FAILURE);      
+    }        
+    // 打印接收到的数据和发送方的地址信息      
+    printf("Received %zd bytes from %s:%d\n", n, inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));      
+    printf("Data: %s\n", buffer);        
+    close(sockfd);      
+    return 0; 
+    }
 ```
 
 注意：在实际应用中，应该处理更多的错误情况，并且可能需要循环接收数据，直到满足某种条件为止。此外，`inet_ntoa` 函数不是线程安全的，因此在多线程环境中应该使用 `inet_ntop` 函数。
