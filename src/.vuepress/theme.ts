@@ -33,7 +33,7 @@ export default hopeTheme({
   // 博客相关
   blog: {
     avatar:"./assets/icon/nyantocat.gif",
-    description: "一个新手程序员",
+    description: "C++",
     intro: "/intro.html",
     medias: {
       //Baidu: "https://example.com",

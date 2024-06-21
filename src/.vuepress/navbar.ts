@@ -46,8 +46,8 @@ export default navbar([
     ],
   },
   {
-    text: "模块1",
+    text: "知识库",
     icon: "book",
-    link: "",
+    link: "http://49.235.135.171:8090/#/login",
   },
 ]);
