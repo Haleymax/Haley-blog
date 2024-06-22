@@ -4,7 +4,7 @@ export default navbar([
   "/",
   "/demo/",
   {
-    text: "知识库",
+    text: "Idea",
     icon: "pen-to-square",
     prefix: "/knowledge/",
     children: [
