@@ -13,6 +13,6 @@ category:
 ## [职工管理系统](https://github.com/Haleymax/Workforce_management_system)
 ## [驾校预约系统](https://github.com/Haleymax/Driving_school_reservation_system)
 ## [基于STL演讲比赛流程系统](https://github.com/Haleymax/Speech_Contest)
-## [暂定](https://github.com/Haleymax)
-## [暂定](https://github.com/Haleymax)
+## [Lua-CPP交互案例](https://github.com/Haleymax/Lua-Cpp)
+## [基于springboot实现的汉服文化推广平台](https://github.com/Haleymax/Hanfu)
 

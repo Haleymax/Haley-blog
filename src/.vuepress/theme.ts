@@ -67,10 +67,10 @@ export default hopeTheme({
       //Whatsapp: "https://example.com",
       //Youtube: "https://example.com",
       //Zhihu: "https://example.com",
-      VuePressThemeHope: {
+      /*VuePressThemeHope: {
         icon: "https://theme-hope-assets.vuejs.press/logo.svg",
         link: "https://theme-hope.vuejs.press",
-      },
+      },*/
     },
   },
 
