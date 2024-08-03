@@ -16,7 +16,7 @@ author: Ms.Huang
 
 ---
 
-C/C++ 使用 MySQL API 操作 数据库
+# C/C++ 使用 MySQL API 操作 数据库
 
 ## 1、连接数据库操作的步骤实现
 
