@@ -11,19 +11,19 @@ export default sidebar({
       children: "structure",
     },*/
     {
-      text: "自动化测试项目",
+      text: "自动化测试",
       icon: "book",
       prefix: "posts/",
       children: "structure",
     },
     {
-      text: "golang项目",
+      text: "独立开发",
       icon: "book",
       prefix: "tool/",
       children: "structure",
     },
     {
-      text: "python项目",
+      text: "项目展示",
       icon: "book",
       prefix: "language/",
       children: "structure",
