@@ -4,7 +4,7 @@ export default navbar([
   "/",
   "/demo/",
   {
-    text: "Idea",
+    text: "推荐",
     icon: "pen-to-square",
     prefix: "/knowledge/",
     children: [
@@ -46,8 +46,8 @@ export default navbar([
     ],
   },
   {
-    text: "知识库",
+    text: "About Me",
     icon: "book",
-    link: "http://49.235.135.171:8090/#/login",
+    link: "/intro",
   },
 ]);

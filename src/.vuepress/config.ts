@@ -5,8 +5,8 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "个人知识库",
-  description: "黄宏伟的个人博客",
+  title: "个人站点",
+  description: "Personal Sites",
   theme,
 
   // 和 PWA 一起启用

@@ -1,8 +1,4 @@
-这是一个基于https://vuepress.vuejs.org/zh/  制作的静态个人博客页面
-我的个人博客主页在 [http://www.haleywei.xyz](http://49.235.135.171/)
+# 基于vue press 搭建的静态博客页面
 
 
-
-
-
-1111
+一个静态前端博客页面
