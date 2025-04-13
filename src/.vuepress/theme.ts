@@ -48,8 +48,8 @@ export default hopeTheme({
       //Flipboard: "https://example.com",
       Gitee: "https://example.com",
       GitHub: "https://github.com/Haleymax",
-      //Gitlab: "https://example.com",
-      //Gmail: "mailto:info@example.com",
+      Gitlab: "https://example.com",
+      Gmail: "mailto:info@example.com",
       //Instagram: "https://example.com",
       //Lark: "https://example.com",
       //Lines: "https://example.com",
@@ -143,7 +143,7 @@ export default hopeTheme({
       // insert component easily
 
       // 在启用之前安装 echarts
-      // echarts: true,
+       echarts: true,
 
       // 在启用之前安装 flowchart.ts
       // flowchart: true,

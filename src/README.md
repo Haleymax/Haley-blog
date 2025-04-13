@@ -9,13 +9,13 @@ heroFullScreen: true
 tagline: 道阻且长，行则将至
 projects:
   - icon: project
-    name: 汉服文化推广平台
-    desc: 项目详细描述
+    name: LanTracer
+    desc: 基于Django和vue实现的一个局域网内设备信息监控的服务
     link: https://github.com/Haleymax/Hanfu
 
   - icon: project
-    name: FTP文件传输系统
-    desc: 使用C++搭建的一个简单传送文件都系统
+    name: FastAPI-TC-NetControl
+    desc: 基于fastapi和tc实现的一个弱网自动化控制的server
     link: https://github.com/Haleymax/FTPServer
 
   - icon: project
@@ -24,18 +24,18 @@ projects:
     link: https://github.com/Haleymax/Data-Structure
 
   - icon: project
-    name: 演讲比赛流程系统
-    desc: 基于STL中各种容器与算法的使用创建的一个演讲比赛流程系统
+    name: api自动化测试框架
+    desc: 基于pytest实现的一个api自动化测试的框架
     link: https://github.com/Haleymax/Speech_Contest
 
   - icon: project
-    name: 网络聊天室
-    desc: 采用C++中TCP网络编程实现的多线程网络聊天室
+    name: 音频api自动化测试
+    desc: 基于uiautomator2实现的半自动音频api测试框架
     link: https://github.com/Haleymax/Online-Chat-Room
 
   - icon: project
-    name: 职工管理系统
-    desc: 采用C++面对对象思想实现的一个职工管理系统
+    name: 安卓性能自动化测试
+    desc: 基于solox实现的安卓性能自动化
     link: https://github.com/Haleymax/Workforce_management_system
 
 footer: 还没有备案，筹备中
